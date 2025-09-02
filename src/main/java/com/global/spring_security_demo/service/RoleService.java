@@ -20,7 +20,7 @@ public class RoleService {
     }
 
     public Role  findById(Long id){
-        return roleRepo.findById(id).orElse(null);
+        return roleRepo.findById(id).orElse();
     }
 
     public Role  findByName(String name){
